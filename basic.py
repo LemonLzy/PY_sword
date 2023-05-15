@@ -57,3 +57,14 @@ def make_list_node(head: list) -> ListNode:
         p.next = ListNode(None)
         p = p.next
     return h
+
+
+def traversal_list_node(head: ListNode) -> list:
+    res = list()
+
+    cur = head
+    while cur:
+        res.append(cur.val)
+        cur = cur.next
+
+    return res

@@ -20,7 +20,7 @@ class ListNode:
         self.next = None
 
 
-def make_tree(l: List) -> TreeNode:
+def make_tree_node(l: List) -> TreeNode:
     """ 由输入列表生成树，返回根节点 """
     q = []
     root = TreeNode(val=l.pop(0))
